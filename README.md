@@ -5,6 +5,7 @@ more sources, interceptors and others
 ### com.github.bingoohuang.flume.more.source.ExecBlockSource
 Enhance exec source to support a log event which may contain multiple lines like java exception trace stacks.
 example:
+
     a1.sources = r1
     a1.channels = c1
     a1.sources.r1.type = com.github.bingoohuang.flume.more.source.ExecBlockSource
@@ -16,6 +17,7 @@ example:
 ### com.github.bingoohuang.flume.more.interceptor.MultiStaticInterceptor
 Interceptor class that appends multiple static, pre-configured headers to all events.
 example:
+
     agent.sources.r1.channels = c1
     agent.sources.r1.type = SEQ
     agent.sources.r1.interceptors = i1
